@@ -28,7 +28,7 @@ jobs:
           BUILD_DATE=$(date '+%d-%b-%Y')
           echo "BUILD_DATE=$BUILD_DATE" >> $GITHUB_ENV
           echo "ARTIFACT_NAME=nabu-wininstaller-v260119-$BUILD_DATE" >> $GITHUB_ENV
-          echo "ZIP_NAME=NABU_WinInstaller_V260119_Hotfix_${BUILD_DATE}.zip" >> $GITHUB_ENV
+          echo "ZIP_NAME=NABU_WinInstaller_V260119_${BUILD_DATE}.zip" >> $GITHUB_ENV
 
       - name: Generate wininstaller.conf
         run: |
